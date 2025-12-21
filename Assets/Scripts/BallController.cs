@@ -9,21 +9,32 @@ public class BallController : MonoBehaviour
     [SerializeField] private float startSpeed;
 
     private Rigidbody2D rb;
-    [SerializeField] private ScoreManager scoreManager; 
+    private ScoreManager scoreManager; 
+    private GameManager gameManager;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.AddForce(Vector2.left * startSpeed);
         scoreManager = FindAnyObjectByType<ScoreManager>();
+        gameManager = FindAnyObjectByType<GameManager>();
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Goal"))
+        if (collision.CompareTag("GoalLeft")) // updating score and ball 
         {
             Destroy(gameObject);
-            scoreManager.AddScore();
+            scoreManager.AddScore("right");
+            scoreManager.SetScore();
+            gameManager.StartBall();
+        }
+
+        if (collision.CompareTag("GoalRight"))
+        {
+            Destroy(gameObject);
+            scoreManager.AddScore("left");
+            scoreManager.SetScore();
+            gameManager.StartBall();
         }
     }
 
