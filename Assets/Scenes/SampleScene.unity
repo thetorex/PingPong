@@ -595,6 +595,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7453580553503596677, guid: ffb0c2461471dd94999e480acf16a3f3, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8580251246477948978, guid: ffb0c2461471dd94999e480acf16a3f3, type: 3}
       propertyPath: m_Name
       value: WallBottom
@@ -619,11 +623,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1158867561965718371, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.60657
+      value: 8.8
       objectReference: {fileID: 0}
     - target: {fileID: 1158867561965718371, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.93338
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1158867561965718371, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -670,8 +674,16 @@ PrefabInstance:
       value: 0.5355735
       objectReference: {fileID: 0}
     - target: {fileID: 3119732480130634149, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
+      propertyPath: m_Size.y
+      value: 9.067537
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119732480130634149, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
       propertyPath: m_Offset.x
       value: -0.017786741
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119732480130634149, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.9793031
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -831,6 +843,7 @@ GameObject:
   - component: {fileID: 1619505640}
   - component: {fileID: 1619505641}
   - component: {fileID: 1619505642}
+  - component: {fileID: 1619505643}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -882,6 +895,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   ballPrefab: {fileID: 2204142509719603176, guid: 90f0b6b4b8d4066449985181dd995db1, type: 3}
+--- !u!114 &1619505643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619505638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38d2f41b84dd7049b21e5ec6289a9aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InputManager
 --- !u!1 &1963865864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,11 +1151,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1158867561965718371, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.79343
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 1158867561965718371, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.93338
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1158867561965718371, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1177,8 +1202,16 @@ PrefabInstance:
       value: 0.606719
       objectReference: {fileID: 0}
     - target: {fileID: 3119732480130634149, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
+      propertyPath: m_Size.y
+      value: 9.033769
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119732480130634149, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
       propertyPath: m_Offset.x
       value: 0.05335951
+      objectReference: {fileID: 0}
+    - target: {fileID: 3119732480130634149, guid: 8ea43008ba24b1a438e9bfda1a5127b2, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.9286494
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

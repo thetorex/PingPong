@@ -168,5 +168,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1ad209119a998a4988ae45a2fd04e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallController
-  moveSpeed: 0
-  startSpeed: 200
+  defaultMoveSpeed: 1.3
